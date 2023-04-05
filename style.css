@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Genshin';
+    src: url(fonts/zh-cn.ttf);
+}
+
+:root {
+    --main-color: #efb932; /* red color */
+    --main-blue: #1e4164;
+}
+
+body {
+    font-family: Genshin, sans-serif;
+    text-align: center;
+    max-width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: dimgrey;
+    background-image: url("media/sucroseNoBG.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+body img {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+hr {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #da8920, goldenrod, #e8bf79, white, goldenrod, goldenrod, transparent);
+    border: none;
+    margin: 2em 0;
+}
+
+#bgBox {
+    background-color: rgba(255, 255, 255, 0.68);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+select {
+    background-color: #606269;
+    color: white;
+    font-family: Genshin;
+    padding: 6px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 105%;
+}
+
+button {
+    font-family: Genshin, sans-serif;
+    padding:2%;
+    border-style: none;
+    border-radius: 5px;
+    margin-right:5px;
+    font-weight: bold;
+    font-size:110%;
+    color: #211f1f;
+    background-color: #efb932;
+    margin-left:3px;
+}
+
+#wonIMG {
+    height: 400%;
+    width: 80%;
+}
+
+button:hover {
+    background-color: var(--main-blue);
+    color: white;
+    transform: scale(1.1);
+}
+
+#gameButtons {
+    margin-top: 2em;
+}
+
+h1:first-letter{
+    color: goldenrod;
+}
+
+#question {
+    color: #1e4164;
+}
+#answersHere {
+    color: white;
+    font-weight: normal;
+    margin-top:7px;
+}
+#gridContainer {
+    margin-top:1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    background-color: rgba(72, 65, 63, 0.66);
+    border-radius: 10px;
+}
+
+
+#levelDisplay button {
+    margin: 20px;
+    margin-top: 2em;
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcf5ec;
+    font-size: 150%;
+}
+
+#levelDisplay button span {
+    transform: rotate(-45deg);
+}
+
+#newGame {
+    background-color: var(--main-blue);
+    color: white;
+    font-weight: normal;
+}
